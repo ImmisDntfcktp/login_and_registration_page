@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/startText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/startText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/titles"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/nameMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/nameMain"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/startText"
+        app:layout_constraintStart_toStartOf="@+id/startText"
+        app:layout_constraintTop_toBottomOf="@+id/startText" />
+
+    <ImageView
+        android:id="@+id/avatarMain"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/descriptionAvatar"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/nameMain"
+        app:layout_constraintStart_toStartOf="@+id/nameMain"
+        app:layout_constraintTop_toBottomOf="@+id/nameMain"
+        app:srcCompat="@drawable/avatar_def"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/startButtonIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue"
+        android:minWidth="112dip"
+        android:onClick="onClickGoAddActivity1SignIn"
+        android:text="@string/startButtonIn"
+        app:layout_constraintEnd_toEndOf="@+id/startText"
+        app:layout_constraintStart_toStartOf="@+id/startText"
+        app:layout_constraintTop_toBottomOf="@+id/avatarMain" />
+
+    <Button
+        android:id="@+id/startButtonUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue"
+        android:minWidth="112dip"
+        android:onClick="onClickGoAddActivity1SignUp"
+        android:text="@string/startButtonUp"
+        app:layout_constraintEnd_toEndOf="@+id/startButtonIn"
+        app:layout_constraintStart_toStartOf="@+id/startButtonIn"
+        app:layout_constraintTop_toBottomOf="@+id/startButtonIn" />
+
+    <TextView
+        android:id="@+id/descriptionTextSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descriptionSignUp"
+        app:layout_constraintEnd_toEndOf="@+id/startButtonUp"
+        app:layout_constraintStart_toStartOf="@+id/startButtonUp"
+        app:layout_constraintTop_toBottomOf="@+id/startButtonUp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

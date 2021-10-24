@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Neco Activities</string>
+    <string name="startText">Hi! Welcome to the app</string>
+    <string name="nameMain">Username</string>
+    <string name="startButtonIn">Sign in</string>
+    <string name="descriptionSignUp">Create a new account</string>
+    <string name="startButtonUp">Sign up</string>
+    <string name="logOut">Log out</string>
+    <string name="inputError">Incorrect data</string>
+
+
+    <string name="backButton">Back</string>
+    <string name="titleActivityAdd1SignUp">Registration</string>
+    <string name="titleActivityAdd1SignIn">Enter your username and password</string>
+    <string name="descriptionAvatar">Avatar</string>
+    <string name="selectImage">select an image</string>
+    <string name="editTextName">Username</string>
+    <string name="editTextPassword">Password</string>
+    <string name="logIn">Log in</string>
+    <string name="checkIn">Check in</string>
+
+    <string name="user1">Kate</string>
+    <string name="user1password">2504</string>
+    <string name="user2">Max</string>
+    <string name="user2password">2506</string>
+    <string name="user3">Misha</string>
+    <string name="user3password">1103</string>
+
+    <string name="empty">empty</string>
+
+    <string name="keySignTitle">keySignTitle</string>
+    <string name="sendName">sendName</string>
+    <string name="sendPassword">sendPassword</string>
+    <string name="sendAvatar">sendAvatar</string>
+    <string name="sendCheck">sendCheck</string>
+    <string name="requestCodeIn">100</string>
+    <string name="requestCodeUp">200</string>
+    <string name="requestCodeGallery">300</string>
+    <string name="avatarID">avatar id</string>
+
+
+</resources>

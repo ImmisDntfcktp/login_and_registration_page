@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity1"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/addTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="@string/titleActivityAdd1SignUp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="onClickGoBack"
+        android:text="@string/backButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/editTextName"
+        android:inputType="textPersonName|textCapWords"
+        android:minWidth="250dp"
+        android:minHeight="48dp"
+        android:textColorHighlight="@color/blue_light"
+        android:textColorLink="@color/blue_light"
+        app:layout_constraintEnd_toEndOf="@+id/selectImageButton"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/selectImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/selectImageButton"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageAvatar"
+        android:layout_width="136dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/blue_light"
+        android:contentDescription="@string/descriptionAvatar"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/addTitle"
+        app:layout_constraintStart_toStartOf="@+id/addTitle"
+        app:layout_constraintTop_toBottomOf="@+id/addTitle"
+        app:srcCompat="@drawable/nyako"
+        tools:ignore="ImageContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/editTextPassword"
+        android:inputType="textPassword|numberPassword"
+        android:minWidth="250dp"
+        android:minHeight="48dp"
+        android:textColorHighlight="@color/blue_light"
+        android:textColorLink="@color/blue_light"
+        app:layout_constraintEnd_toEndOf="@+id/editTextName"
+        app:layout_constraintStart_toStartOf="@+id/editTextName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:insetTop="0dp"
+        android:onClick="onClickGoGallery"
+        android:text="@string/selectImage"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageAvatar"
+        app:layout_constraintStart_toStartOf="@+id/imageAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/imageAvatar" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/blue"
+        android:minWidth="112dip"
+        android:onClick="onClickSendAnswer"
+        android:text="@string/checkIn"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
